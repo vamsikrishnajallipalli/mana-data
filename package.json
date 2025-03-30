@@ -1,0 +1,39 @@
+{
+  "name": "mana-data",
+  "version": "0.1.0",
+  "description": "ManaData - An open-source, open-data dashboard for Andhra Pradesh under the OpenAP initiative",
+  "main": "index.js",
+  "scripts": {
+    "frontend:dev": "cd frontend && npm run dev",
+    "backend:dev": "cd backend && npm run dev",
+    "dev": "concurrently \"npm run frontend:dev\" \"npm run backend:dev\"",
+    "install:all": "npm install && cd frontend && npm install && cd ../backend && npm install",
+    "build": "cd frontend && npm run build",
+    "lint": "eslint .",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vamsikrishnajallipalli/mana-data.git"
+  },
+  "keywords": [
+    "open-data",
+    "andhra-pradesh",
+    "data-dashboard",
+    "civic-tech",
+    "transparency",
+    "governance"
+  ],
+  "author": "OpenAP Initiative",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vamsikrishnajallipalli/mana-data/issues"
+  },
+  "homepage": "https://github.com/vamsikrishnajallipalli/mana-data#readme",
+  "devDependencies": {
+    "concurrently": "^8.2.0",
+    "eslint": "^8.56.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "jest": "^29.7.0"
+  }
+}
